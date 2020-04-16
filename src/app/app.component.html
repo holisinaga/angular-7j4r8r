@@ -1,4 +1,27 @@
 <hello name="{{ name }}"></hello>
 <p>
   Start editing to see some magic happen :)
+
+  <br/>
+  {{"Contoh Awal"}}
+  <br/><br/>
+  25+25={{25+25}}
+  
 </p>
+
+  <div *ngFor="let buah of item; let num=index">
+  {{num+1}}. {{buah.nama}} - {{buah.harga | currency:'Rp. '}}
+  </div>
+  <br/>
+  <div *ngFor = "let data of itemArr; let num=index">
+    Isi Array {{num}} : {{data}}
+  </div>
+
+  <p *ngIf="show"> 
+    Tampilkan Isi 
+  </p>
+  <p *ngIf="user.nama">
+    Nama user : {{user.nama}}
+  </p>
+
+

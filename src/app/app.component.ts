@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+  name = 'Nalom A. Sinaga';
+  
+  item = [{
+  nama : 'Kelengkeng',
+  harga : 10000
+  },
+  {
+  nama : 'Jeruk',
+  harga : 15000
+  }];
+
+  itemArr = [1,2,3,4];
+
+  show : boolean = true;
+
+  user = {
+    nama : 'Nalom Aholiab Sinaga'
+  };
 }
